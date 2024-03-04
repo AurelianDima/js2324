@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let primulnr = parseInt(prompt('Introduceti primul numar'));
+        let operatie = prompt('Introduceti operatia');
+        let aldoileanr = parseInt(prompt('Introduceti al doilea numar'));
+
+        switch(operatie){
+            case '+':
+            result = parseInt(primulnr + aldoileanr);
+            break;
+            case '-' :
+            result = parseInt(primulnr - aldoileanr);
+            break;
+            case '*' :
+            result = parseInt(primulnr * aldoileanr);
+            break;
+            case '/' :
+            result = parseInt(primulnr / aldoileanr);
+            break;
+            default:
+            alert('Introduceti operatia');
+            break;
+        }
+        if(result !== result){
+            alert('Operatia nu poate fi efectuata . Verificati datele pe care le-ati introdus');
+        }
+        else{
+            alert(`Rezultatul dvs este: ${result}`);
+        }
+        
+    </script>
+</body>
+</html>
